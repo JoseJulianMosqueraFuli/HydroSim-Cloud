@@ -6,13 +6,15 @@ El objetivo es ejecutar escenarios de simulacion de forma automatizada y escalab
 
 ## Estado del proyecto
 
-En etapa de definicion. La arquitectura y las fases propuestas estan en [docs/plan-inicial.md](docs/plan-inicial.md). No hay infraestructura desplegada.
+En etapa de definicion/construccion de la fundacion Terraform. HEC-RAS es el motor de referencia para rios e inundaciones en EE. UU., no una seleccion confirmada por la vacante. No hay infraestructura desplegada.
+
+La arquitectura, los supuestos y las decisiones pendientes estan en [docs/plan-inicial.md](docs/plan-inicial.md). La fundacion Terraform esta en [infra/](infra/).
 
 ## Proximos pasos
 
 1. Confirmar las decisiones y restricciones de la seccion "Decisiones necesarias".
-2. Crear la estructura Terraform y una estrategia segura de estado remoto.
-3. Implementar primero un flujo vertical minimo en un entorno no productivo.
-4. Validar y revisar el plan de Terraform antes de cualquier despliegue.
+2. Validar la ejecucion automatizada de HEC-RAS y su compatibilidad con AWS Batch; no asumir que un job Windows se puede ejecutar en Batch.
+3. Completar la fundacion Terraform para `dev` y revisar el plan antes del despliegue.
+4. Implementar el flujo vertical minimo en un entorno no productivo.
 
 No se deben aplicar cambios en AWS hasta confirmar la cuenta, region, entorno, limites de gasto y autorizacion de despliegue.
