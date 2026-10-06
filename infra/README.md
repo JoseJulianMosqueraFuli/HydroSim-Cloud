@@ -38,7 +38,7 @@ terraform validate
 terraform plan
 ```
 
-El primer plan de `dev` propone crear un bucket de artefactos privado, versionado, cifrado y con denegacion de transporte no TLS. No se incluyen aun VPC, AWS Batch ni ejecucion HEC-RAS: primero se deben confirmar Redshift, conectividad, retencion, costos y compatibilidad del motor.
+El primer plan de `dev` propone crear un bucket de artefactos privado, versionado, cifrado y con denegacion de transporte no TLS. La region de trabajo propuesta es `us-east-1`. Todavia no se incluyen VPC, AWS Batch, workers Windows ni Step Functions; esos recursos requieren definir conectividad/costos, obtener los instaladores/licencia de HEC-RAS y validar la forma de ejecucion automatizada.
 
 ## Seguridad y operacion
 

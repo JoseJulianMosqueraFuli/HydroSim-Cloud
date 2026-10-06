@@ -13,7 +13,7 @@ La arquitectura, los supuestos y las decisiones pendientes estan en [docs/plan-i
 ## Proximos pasos
 
 1. Confirmar las decisiones y restricciones de la seccion "Decisiones necesarias".
-2. Validar la ejecucion automatizada de HEC-RAS y su compatibilidad con AWS Batch; no asumir que un job Windows se puede ejecutar en Batch.
+2. Probar HEC-RAS automatizado en EC2 Windows; mantener AWS Batch para tareas Linux auxiliares, salvo que una prueba de compatibilidad habilite otro diseño.
 3. Completar la fundacion Terraform para `dev` y revisar el plan antes del despliegue.
 4. Implementar el flujo vertical minimo en un entorno no productivo.
 
