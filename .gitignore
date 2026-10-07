@@ -15,3 +15,14 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Local scenario database
+/data/
+*.sqlite3
+*.db

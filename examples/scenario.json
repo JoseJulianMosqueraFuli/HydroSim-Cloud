@@ -1,0 +1,8 @@
+{
+  "name": "demo-river-reach",
+  "engine": "demo",
+  "parameters": {
+    "flow_rate_cms": 42.5,
+    "reach": "sample-reach-01"
+  }
+}

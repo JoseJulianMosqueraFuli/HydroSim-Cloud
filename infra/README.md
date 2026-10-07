@@ -38,7 +38,7 @@ terraform validate
 terraform plan
 ```
 
-El primer plan de `dev` propone crear un bucket de artefactos privado, versionado, cifrado y con denegacion de transporte no TLS. La region de trabajo propuesta es `us-east-1`. Todavia no se incluyen VPC, AWS Batch, workers Windows ni Step Functions; esos recursos requieren definir conectividad/costos, obtener los instaladores/licencia de HEC-RAS y validar la forma de ejecucion automatizada.
+El entorno `dev` incluye ahora el prototipo cloud: API Gateway HTTP API con AWS IAM auth, dos funciones Lambda, Step Functions, DynamoDB bajo demanda y un bucket privado. El workflow solo corre el motor demo sintetico. No incluye VPC, Redshift, AWS Batch, EC2 Windows ni HEC-RAS; requieren decisiones técnicas y validación del software/licencia. La región propuesta es `us-east-1` y el objetivo de costo inicial es USD 100/mes. Cualquier alerta de presupuesto sera preventiva: AWS Budgets no detiene por si solo los recursos ni garantiza un tope de gasto.
 
 ## Seguridad y operacion
 
